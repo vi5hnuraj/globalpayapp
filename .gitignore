@@ -1,0 +1,41 @@
+.env
+node_modules/
+
+# Foundry build output
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# Kept locally: handoff notes and the mock stores, which include a personal UPI QR
+*handoff*.md
+HANDOFF*.md
+apps/mock-store/
+
+.mcp.json
+# Android release signing (store this outside git; see apps/mobile-flutter/README)
+apps/mobile-flutter/android/keystore.properties
+*.jks
+*.keystore
+
+# The relayer's durable pending approvals
+globalpay-main/relayer/pending.v2.json
+
+# Rust build output for the NEAR contract
+near-receipts/target/
+
+# Flutter/Android build output
+apps/mobile-flutter/android/build/
+apps/mobile-flutter/build/
+*.apk
+*.aab
+
+near-scanpay/target/
+
+# Legacy EVM contract dependencies (forge install)
+contracts/lib/
