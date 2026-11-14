@@ -1,0 +1,54 @@
+name: globalpay
+description: GlobalPay — a stablecoin wallet that pays any UPI QR and settles rupees to the merchant.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # GlobalPay + relayer HTTP API
+  http: ^1.6.0
+  # UPI QR scanning
+  mobile_scanner: ^7.5.0
+  # EIP-712 (keccak256) and the card's SHA-1 certificate chain
+  pointycastle: ^4.0.0
+  crypto: ^3.0.8
+  # The phone key alias and the last wallet are kept here
+  shared_preferences: ^2.5.6
+  # Receiving: show this wallet's address as a QR
+  qr_flutter: ^4.1.0
+  nfc_manager: ^4.3.0
+  cryptography: ^2.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/capk.json
+    - assets/branding/globalpay-icon-1024.png
+    - assets/branding/globalpay-logo-original.png
+  # GlobalPay's own pair: Bricolage Grotesque for display, Instrument Sans for text.
+  fonts:
+    - family: BricolageGrotesque
+      fonts:
+        - asset: assets/fonts/BricolageGrotesque-600.ttf
+          weight: 600
+        - asset: assets/fonts/BricolageGrotesque-700.ttf
+          weight: 700
+        - asset: assets/fonts/BricolageGrotesque-800.ttf
+          weight: 800
+    - family: InstrumentSans
+      fonts:
+        - asset: assets/fonts/InstrumentSans-400.ttf
+          weight: 400
+        - asset: assets/fonts/InstrumentSans-500.ttf
+          weight: 500
+        - asset: assets/fonts/InstrumentSans-600.ttf
+          weight: 600
