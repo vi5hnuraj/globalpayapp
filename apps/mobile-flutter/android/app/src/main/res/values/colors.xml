@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GlobalPay's near-black, the field the emerald mark sits on. -->
+    <color name="ic_launcher_background">#08130F</color>
+    <color name="splash_background">#08130F</color>
+</resources>
