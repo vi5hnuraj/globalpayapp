@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "networkId": "testnet",
+  "rpc": "https://rpc.testnet.near.org",
+  "explorer": "https://explorer.testnet.near.org",
+  "verifiedAt": "2026-11-15T00:00:00Z",
+  "token": {
+    "accountId": "usdc.fakes.testnet",
+    "name": "Bridged USDC",
+    "symbol": "USDC.e",
+    "decimals": 6,
+    "spec": "ft-1.0.0",
+    "testAsset": true,
+    "productionCircleUsdc": false,
+    "codeHash": "E1E1CJYxT5FjzVSF55QoEWzv6dbqTe2yB6Hpmjks7JJ7",
+    "storageRegistrationYoctoNear": "1250000000000000000000",
+    "ftTransferCallVerifiedTx": "58GsawWAB2AA9qW3C1PCJC764YDNPKQnY4m9U8mJFUGe",
+    "permissionlessMintEvidenceTx": "FNh6Y6TdFDgW1kw5dCnUSZ5MfNTvG5DFCm42HvJE2Y4Y"
+  },
+  "accounts": {
+    "deployer": "globalpay-receipts.testnet",
+    "demo": "demo.globalpay-receipts.testnet",
+    "vault": "vault.globalpay-receipts.testnet",
+    "receipts": "globalpay-receipts.testnet",
+    "treasury": "treasury.globalpay-receipts.testnet"
+  },
+  "accountCreation": {
+    "demoTx": "2ggXEBHCtapBhGyeNUVyfiRtUzcDSwKneAypYYz1RJr6",
+    "vaultTx": "62B1ZnPDXF5LJcVxvgkwzpiPSCa26Et14FaF5ddaHeKY",
+    "demoStorageRegistrationTx": "EvVidCBwg7gQakQwkA4cJs2wxJCNQA3SeRzUNoAwk4fz",
+    "vaultStorageRegistrationTx": "993ZkPN7iCJTpASgCMDFwx5wE7CL8BU12otWiaGEwwCi",
+    "demoMintTx": "Eg37N9puFne9gyY87XRMwC9MSi8nxqi6NDmej1nASj9m",
+    "treasuryTx": "5TpfkSY87f32odtrPf48HG1xYGQQ5PLKs3f6uAfUdZJK",
+    "treasuryStorageRegistrationTx": "6KnBe9iNkFxbEM5ABC5uHW48YQUcuAC8ZzXyJ8EWGWmz"
+  },
+  "vault": {
+    "accountId": "vault.globalpay-receipts.testnet",
+    "owner": "globalpay-receipts.testnet",
+    "settler": "globalpay-receipts.testnet",
+    "treasury": "treasury.globalpay-receipts.testnet",
+    "token": "usdc.fakes.testnet",
+    "codeHash": "6X13VPqh5ZrtbnFJ7yUor1HyfokJZV66iM6gfkpgpAjX",
+    "wasmSha256": "51f9e84dd28efed74581b8ebb2120c146227faee7ecd434a16292c688093efce",
+    "deployTx": "HrE6Ai9zL4HpEJC1kVKpzXMyLE6jidKgKAn4FobnXyy1",
+    "treasuryUpgradeTx": "A7MRst1Es4Whit141hg2ZbqGSBec9uy5Zw75BrU5kVmp",
+    "migrationTx": "H1tjXKJNyFWuagM2aZDrskKhUrhNk71VRERmheErzUyE",
+    "callbackTargetFixUpgradeTx": "BwD6d3WHZNXMJ3zkXkH7jGr8wXosezLxyMnfLSmc4t5Q",
+    "methods": [
+      "ft_on_transfer",
+      "get_lock",
+      "total_locked",
+      "request_refund",
+      "on_refund_complete",
+      "start_payout",
+      "request_settlement",
+      "on_settlement_complete",
+      "payout_reference",
+      "owner",
+      "token",
+      "settler",
+      "treasury",
+      "set_settler",
+      "set_treasury",
+      "migrate"
+    ],
+    "unsupported": [
+      "RazorpayX payout inside the contract",
+      "release",
+      "onramp",
+      "dispute"
+    ]
+  },
+  "verification": {
+    "successfulLockTx": "73W2bhLAyD28getf1XWVUcmBZ6632uriwnVjXuF12S7a",
+    "successfulRefundTx": "2WHh1PxWyFouUeqhw1tTkLZJRLVit5nsUzNmWqPatK4n",
+    "failureTestLockTx": "HAKf7mJDg4hEzRYTEkUME1nhUmum1zRfoioEd4VrVnM",
+    "failedRefundTx": "574Q444RCD1oNeYVmDzHV7rN3WCqqeLkV2Kv6YGp2KfV",
+    "reregisterTx": "7gBKf2q4o2HmzsQ6RrbfCwQhwACRN4eGsmByFYMgZJNz",
+    "successfulRetryTx": "6UnQ8ssJGkw8v2661Tvp4dfoBXZMrCpkzd4BaVEsTfvC",
+    "flutterPublicKey": "ed25519:GHxdJcevbwR7nmVbAK5YJDYHWonMeZMAss3KLc3wZnxK",
+    "flutterKeyProvisionTx": "F6i8fxyQb71uyQjKR6GSCsecKGepJjqXoLg6SEX1DiVP",
+    "appSignedLockTx": "D7ULnQkgMtCrNi3Br3mda2fnwyR5PZNhkt4gyJGZFqRp",
+    "appSignedRefundTx": "BRAkBMCQ1uA3ri7cb77KnPsbZEYR4W288vigqVYXyPAW",
+    "appSignedLockId": "near-6d2ac41cb449c3a66ce825c3e121e4f7",
+    "syntheticSettlement": {
+      "realInrPayout": false,
+      "purpose": "test-only proof of callback-safe transfer from vault to crypto treasury",
+      "id": "test-only-no-inr-20261114",
+      "amount": "1000",
+      "lockTx": "5sSxMaRq8PfppNNyKdE6ijceHbv5PcH3Bh445JmQK1x3",
+      "startPayoutTx": "E4qNDHmUPNkQjxyYtJMNHEicfA44vDgKJbk7psdPnXhZ",
+      "settlementTx": "29hecU8F96d476ZuRrcNdZCGVZ7BQZGHHaSZJonjqsys",
+      "payoutRef": "4f5dec11336841df5478e2c005de3e4579b530bfa13f69769df5cc6fe4bb34e2"
+    },
+    "finalDemoTokenBalance": "99999000",
+    "finalVaultTokenBalance": "0",
+    "finalTreasuryTokenBalance": "1000",
+    "finalTotalLocked": "0"
+  },
+  "receipts": {
+    "accountId": "globalpay-receipts.testnet",
+    "codeHash": "CduMwCMKPMCikzzAaRerZdvUzCF1me59fhmPGiYAqZhn",
+    "deployTx": "AgsvRaM2wUHfniYSyEuhqULT8t1mUdFFx389z1z2LT1H",
+    "successfulAnchorTx": "GTo1EedVYAjv9WG6TXixxBBzpnfkjwpRrghibrcBPnXA",
+    "status": "receipt prototype; not a payout board or proof of merchant payment"
+  }
+}
